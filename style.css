@@ -5,6 +5,7 @@
   --secondary-color: #3ec8ac;
   --action-color: #4e90a4;
   --layover-color: #6e60a0;
+  --hover-color: #6e60a0a3;
 }
 
 body {
@@ -77,7 +78,7 @@ p {
 #section-9:hover::before {
   transition: all 0.5s;
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--hover-color);
   position: absolute;
   left: 0;
   right: 0;
@@ -147,7 +148,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   #main-container {
-    height: 190vh;
+    height: 160vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 3fr);
     grid-template-areas:
@@ -166,4 +167,9 @@ p {
   body {
     height: 200vh;
   }
+}
+
+#team-2 {
+  text-align: center;
+  padding-bottom: 30px;
 }
